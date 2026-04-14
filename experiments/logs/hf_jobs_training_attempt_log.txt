@@ -1,0 +1,18 @@
+Training attempt log
+Date: 2026-04-14
+
+Method:
+- Tried to launch a Hugging Face Jobs UV run to inspect dataset schema and start a remote training workflow.
+
+Observed result:
+Error executing uv: API request failed: 402 Payment Required
+
+Server response:
+{
+  "error": "Pre-paid credit balance is insufficient - add more credits to your account to use Jobs."
+}
+
+Interpretation:
+- A real remote training attempt was made.
+- It could not continue in the current environment because the connected Hugging Face Jobs account had insufficient prepaid credits.
+- The local training path remains valid and is the recommended route for this repository.
